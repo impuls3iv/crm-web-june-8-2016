@@ -1,8 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <style>
+    body {
+        background: url("https://images.unsplash.com/photo-1425141708895-60ba4a72e556?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=162cebd43f069c9c13c523f357c2ff40") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+          }
 
+    h1 {
+      color: white;
+    }
+
+    h3 {
+      color: grey;
+    }
+
+    li {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    a {
+      color: yellow;
+    }
+</style>
   </head>
+  <header>
+    <center><img src="http://vignette2.wikia.nocookie.net/sw1mush/images/6/60/Emblem_rebel_phoenix.png/revision/latest?cb=20060818195550"></center>
+  </header>
+  <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/contacts">Contacts</a></li>
+    <li><a href="/new_contact">Add Contact</a></li>
+  </ul>
+</nav>
   <body>
     <%= yield %>
   </body>
