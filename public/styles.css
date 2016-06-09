@@ -53,3 +53,8 @@ li a:hover {
 a {
   color: yellow;
 }
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
