@@ -31,3 +31,16 @@ post '/contacts' do
   redirect to('/contacts')
 
 end
+
+get '/delete_page' do
+
+  erb :delete_page
+
+end
+
+post '/delete' do
+
+  Contact.delete(params[:attribute_delete], params[:identifier_delete])
+  redirect to('/contacts')
+
+end
