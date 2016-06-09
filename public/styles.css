@@ -1,5 +1,5 @@
 body {
-    background: url("https://images.unsplash.com/photo-1425141708895-60ba4a72e556?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=162cebd43f069c9c13c523f357c2ff40") no-repeat center center fixed;
+    background: url("http://www.wallmisc.com/media/34709_15_2560_1440-view?resolution=2560x1440&file=MTkyMHgxMDgwLzIwMTMwMjExL25pbnRlbmRvIHZpZGVvIGdhbWVzIGJsYWNrIGJhY2tncm91bmQgbmVzIDE5MjB4MTA4MCB3YWxscGFwZXJfd3d3LndhbGwzMjEuY29tXzY1LmpwZw==&name=bmludGVuZG9fdmlkZW9fZ2FtZXNfYmxhY2tfYmFja2dyb3VuZF9uZXNfMTkyMHgxMDgwX3dhbGxwYXBlcg==") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,7 +39,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-
+  border-style: solid;
 }
 
 li a:hover {
