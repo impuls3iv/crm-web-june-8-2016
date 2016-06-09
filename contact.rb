@@ -165,6 +165,7 @@ class Contact
           temp_var = @@contacts.index(item) #save the index number of the @@contact instance with the id
           @@contacts.delete_at(temp_var) #and delete the array item at that index number
         end
+    end
     #@@contacts.delete(self)
     # delete_var = delete_id.to_i #do i need to do this? who knows...
     # @@contacts.each do |item| #iterate over each instance of contact in the master array
