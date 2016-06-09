@@ -40,7 +40,7 @@ end
 
 post '/delete' do
 
-  Contact.delete(params[:attribute_delete], params[:identifier_delete])
+  Contact.delete(params[:attribute_delete])
   redirect to('/contacts')
 
 end
