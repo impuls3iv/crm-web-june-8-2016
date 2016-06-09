@@ -7,14 +7,16 @@ require 'sinatra'
 get '/' do #calls index page in views directory
 
   @crm_app_name = "Sammys CRM"
-  erb :index
+  erb :index #serves the html file
 
 end
 
 
 
 get '/contacts' do
+
   erb :contacts
+
 end
 
 get '/new_contact' do
@@ -24,6 +26,8 @@ get '/new_contact' do
 end
 
 post '/contacts' do
+
   Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
   redirect to('/contacts')
+
 end

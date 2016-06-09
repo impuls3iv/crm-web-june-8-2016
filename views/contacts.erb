@@ -1,7 +1,7 @@
-<h1>All Contacts</h1>
+<center><h1 class="headerbig">All Contacts</h1></center>
 
-<ol>
+<center><ol>
 <% Contact.all.each do |contact| %>
-  <li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %></li>
+  <center><li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %></li></center>
 <% end %>
-</ol>
+</ol></center>
