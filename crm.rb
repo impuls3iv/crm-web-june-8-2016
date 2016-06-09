@@ -38,7 +38,7 @@ get '/delete_page' do
 
 end
 
-post '/delete' do
+post '/delete_page' do
 
   Contact.delete(params[:attribute_delete])
   redirect to('/contacts')
