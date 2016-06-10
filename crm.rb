@@ -6,6 +6,8 @@ require 'sinatra'
 
 
 Contact.create('Johnny', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
+Contact.create('Jane', 'Doe', 'janedoe@gmail.com', 'So Xool')
+Contact.create('Sam', 'Unt', 'sammy.unterman@gmail.com', 'Like God. But better')
 
 get '/' do #calls index page in views directory
 
