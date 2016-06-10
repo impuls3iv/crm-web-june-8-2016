@@ -55,7 +55,13 @@ post '/delete_page_all' do
 
 end
 
-get '/contacts/1' do
-  @contact = Contact.find(1)
-  erb :single_contact
+get '/contacts/:id' do
+
+  @contact = Contact.find(params[:id].to_i)
+    if @contact
+      erb :single_contact
+    else
+      raise Sinatra::NotFound
+    end
+
 end
