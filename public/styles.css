@@ -27,13 +27,14 @@ ol {
   margin-right: 50%;
 }
 
-ul {
+#navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #00CC5C;
-  margin-right: 50%;
+  margin-left: 40%;
+  margin-right: 32%;
 }
 
 
