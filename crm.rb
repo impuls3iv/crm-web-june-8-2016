@@ -4,6 +4,9 @@
 require_relative 'contact'
 require 'sinatra'
 
+
+Contact.create('Johnny', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
+
 get '/' do #calls index page in views directory
 
   @crm_app_name = "Professional Network Relationship Manager (PNRM)"
@@ -52,8 +55,7 @@ post '/delete_page_all' do
 
 end
 
-get '/single_contact' do
-
+get '/contacts/1' do
+  @contact = Contact.find(1)
   erb :single_contact
-
 end

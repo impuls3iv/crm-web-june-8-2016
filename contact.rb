@@ -50,15 +50,17 @@ class Contact
 
     #puts "Which ID do you want to find"
     #find_contact_num = gets.chomp!.to_i
-    find_contact_num = find_argument.to_i
-    #iterates through contacts class var and gives the id attribute of each instance
-    #still needs to find the SPECIFIC instance
-    #for find_contact_counter in 0..@@contacts.length
-    @@contacts.each do |contact_item|
-        if contact_item.id == find_contact_num
-          return contact_item
-        end
-    end
+    # find_contact_num = find_argument.to_i
+    # #iterates through contacts class var and gives the id attribute of each instance
+    # #still needs to find the SPECIFIC instance
+    # #for find_contact_counter in 0..@@contacts.length
+    # @@contacts.each do |contact_item|
+    #     if contact_item.id == find_contact_num
+    #       return contact_item
+    #     end
+
+    @@contacts.find { |contact| contact.id == find_argument }
+    
 
 
   end
