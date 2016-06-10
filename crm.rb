@@ -6,7 +6,7 @@ require 'sinatra'
 
 get '/' do #calls index page in views directory
 
-  @crm_app_name = "Sammys CRM"
+  @crm_app_name = "Professional Network Relationship Manager (PNRM)"
   erb :index #serves the html file
 
 end
@@ -45,4 +45,6 @@ post '/delete_page' do
 
 end
 
-post '/delete_all'
+post '/delete_all' do
+
+end

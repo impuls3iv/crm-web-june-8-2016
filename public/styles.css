@@ -8,6 +8,7 @@ body {
 
 .headerbig {
   color: white;
+  margin-left: 25%;
 }
 
 .headersmall {
@@ -59,4 +60,15 @@ a {
 .logo {
   height: 60px;
   width: 60px;
+}
+
+#header_delete {
+  color: white;
+  font-family: monospace, sans-serif;
+}
+
+#small_header_delete {
+  color: white;
+  font-family: monospace, sans-serif;
+  font-size: 20px;
 }
