@@ -15,8 +15,8 @@ body {
 .headersmall {
   color: grey;
   font-family: monospace;
-  background-color: white;
-  margin-right: 75%;
+  background-color: gold;
+  text-align: center;
 }
 
 ol {
