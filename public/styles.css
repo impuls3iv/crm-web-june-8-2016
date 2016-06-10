@@ -37,6 +37,24 @@ ol {
   margin-right: 32%;
 }
 
+#edit_link {
+  font-family: monospace;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  border: solid;
+  padding: 5px;
+}
+
+#edit_link:hover {
+  font-family: monospace;
+  color: gold;
+  font-size: 16px;
+  text-decoration: none;
+  border: solid;
+  padding: 5px;
+}
+
 
 li {
   float: left;
