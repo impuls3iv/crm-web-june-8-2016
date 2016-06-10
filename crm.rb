@@ -51,3 +51,9 @@ post '/delete_page_all' do
   redirect to('/contacts')
 
 end
+
+get '/single_contact' do
+
+  erb :single_contact
+
+end
