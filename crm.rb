@@ -45,6 +45,9 @@ post '/delete_page' do
 
 end
 
-post '/delete_all' do
+post '/delete_page_all' do
+
+  Contact.delete_all
+  redirect to('/contacts')
 
 end
