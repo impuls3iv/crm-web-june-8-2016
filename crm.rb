@@ -71,7 +71,8 @@ get '/contacts/:id' do
 end
 
 
-put '/contacts/:id' do
+put '/contacts/:id' do #posted from edit_contact.erb
+
   @contact = Contact.find(params[:id].to_i) #save found contact to @contact
   if @contact #if theres something there
 
@@ -88,6 +89,7 @@ put '/contacts/:id' do
   else
     raise Sinatra::NotFound
   end
+end
 
 
 #this is called from the single_contact.erb page when the user clicks the edit button
@@ -99,8 +101,5 @@ get '/contacts/:id/edit' do
   else
     raise Sinatra::NotFound
   end
-
-end
-
 
 end
