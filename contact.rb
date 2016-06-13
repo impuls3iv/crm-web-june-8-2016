@@ -30,3 +30,7 @@ class Contact < ActiveRecord::Base
 
 
 end
+
+Contact.auto_upgrade! # saves table design. does not save data
+#is useful if the table is modified. It will always insure that the table schema-
+# -is up to date
