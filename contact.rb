@@ -10,7 +10,7 @@ require 'mini_record'
 
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'CRM_web.sqlite3')
 
-class Contact
+class Contact < ActiveRecord::Base
 
   attr_reader :id
   attr_accessor :first_name, :last_name, :email, :note
