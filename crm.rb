@@ -61,8 +61,8 @@ end
 
 get '/contacts/:id' do
 
-  @contact = Contact.find(params[:id].to_i)
-    if @contact
+  @contact = Contact.find(params[:id].to_i) #save instance to @contact
+    if @contact #if it exists display single_contact page
       erb :single_contact
     else
       raise Sinatra::NotFound
@@ -70,9 +70,30 @@ get '/contacts/:id' do
 
 end
 
+
+put '/contacts/:id' do
+  @contact = Contact.find(params[:id].to_i) #save found contact to @contact
+  if @contact #if theres something there
+
+    #pu
+    @contact.first_name = params[:first_name]
+    @contact.last_name = params[:last_name]
+    @contact.email = params[:email]
+    @contact.note = params[:note]
+
+    @contact.save
+
+    redirect to('/contacts')
+
+  else
+    raise Sinatra::NotFound
+  end
+
+
+#this is called from the single_contact.erb page when the user clicks the edit button
 get '/contacts/:id/edit' do
 
-  @contact = Contact.find(params[:id].to_i)
+  @contact = Contact.find(params[:id].to_i) #the id is already logged through html
   if @contact
     erb :edit_contact
   else
@@ -81,16 +102,5 @@ get '/contacts/:id/edit' do
 
 end
 
-put '/contacts/:id' do
-  @contact = Contact.find(params[:id].to_i)
-  if @contact
-    @contact.first_name = params[:first_name]
-    @contact.last_name = params[:last_name]
-    @contact.email = params[:email]
-    @contact.note = params[:note]
 
-    redirect to('/contacts')
-  else
-    raise Sinatra::NotFound
-  end
 end
