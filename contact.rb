@@ -22,47 +22,6 @@ class Contact < ActiveRecord::Base
   # but it should allow you to search for a contact using attributes other than id
   # by specifying both the name of the attribute and the value
   # eg. searching for 'first_name', 'Betty' should return the first contact named Betty
-  def self.find_by(att_find_by, val_find_by)
-
-    # #get user input
-    # puts "Do you want to search by first name (first), last name (last), email (email), or notes (note)?"
-    # att_find_by = gets.chomp!
-    # puts "What is the value of that attribute? (jon? sam@email.com? \'cool dude\'?)"
-    # val_find_by = gets.chomp!
-
-    #find the value
-    if att_find_by == "first_name"
-      @@contacts.each do |findby|
-        if findby.first_name == val_find_by
-          #return findby
-          return findby#{}"ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
-        end
-      end
-
-    elsif att_find_by == "last_name"
-      @@contacts.each do |findby|
-        if findby.last_name == val_find_by
-          return findby#{}"ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
-        end
-      end
-
-    elsif att_find_by == "email"
-      @@contacts.each do |findby|
-        if findby.email == val_find_by
-          return findby#{}"ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
-        end
-      end
-
-    elsif att_find_by == "note"
-      @@contacts.each do |findby|
-        if findby.note == val_find_by
-          return findby#{}"ID: #{findby.id} Contains first name #{findby.first_name}, last name #{findby.last_name}, email #{findby.email}, note: #{findby.note}"
-        end
-      end
-
-    end
-
-  end
 
 
 
