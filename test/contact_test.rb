@@ -9,7 +9,8 @@ class TestContact < Minitest::Test
     first_name: 'Grace',
     last_name:  'Hopper',
     email:      'grace@hopper.com',
-    note:       'computer scientist')
+    note:       'computer scientist'
+    )
 
   end
 
