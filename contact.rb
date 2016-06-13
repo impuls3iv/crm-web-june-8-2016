@@ -53,14 +53,7 @@ class Contact < ActiveRecord::Base
 
 
   # This method should delete all of the contacts
-  def self.delete_all
 
-    # for contact_delete in 0..@@contacts.length
-      #@@contacts.delete_at(contact_delete)
-      @@contacts = []
-    #end
-
-  end
 
   def full_name
 
