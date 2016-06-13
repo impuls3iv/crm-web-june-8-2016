@@ -12,13 +12,16 @@ ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'CRM_web.s
 
 class Contact < ActiveRecord::Base
 
+  #all of the attr_accessors were given to us by active record
+
 #-------------------------------
 #creates field with symbol as column name, as as key, and datatype
-  field :first_name, as: :string
+  field :first_name, as: :string #every field is a column
   field :last_name, as: :string
   field :email, as: :string
   field :note,  as: :text
 #dont need an id field because sqlite creates field for you
+#dont need find, find by, delete, delete all, or update because ActiveRecord
 #----------------------------------
 
   def full_name

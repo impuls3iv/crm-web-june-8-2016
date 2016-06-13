@@ -5,10 +5,6 @@ require_relative 'contact'
 require 'sinatra'
 
 
-Contact.create('Johnny', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
-Contact.create('Jane', 'Doe', 'janedoe@gmail.com', 'So Xool')
-Contact.create('Sam', 'Unt', 'sammy.unterman@gmail.com', 'Like God. But better')
-
 get '/' do #calls index page in views directory
 
   @crm_app_name = "Professional Network Relationship Manager (PNRM)"
@@ -32,7 +28,13 @@ end
 
 post '/contacts' do
 
-  Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
+  contact = Contact.create(
+    first_name: params[:first_name],
+    last_name: params[:last_name],
+    email: params[:email],
+    note: params[:note]
+
+  )
   redirect to('/contacts')
 
 end
