@@ -4,6 +4,12 @@
 #   ruby test/contact_test.rb
 #
 # If your implementation of the Contact class is 'right', then you should see that all tests pass!
+
+require 'active_record'
+require 'mini_record'
+
+ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'CRM_web.sqlite3')
+
 class Contact
 
   attr_reader :id
@@ -60,7 +66,7 @@ class Contact
     #     end
 
     @@contacts.find { |contact| contact.id == find_argument }
-    
+
 
 
   end
