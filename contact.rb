@@ -26,31 +26,6 @@ class Contact < ActiveRecord::Base
 
 
 
-  # This method should allow you to specify
-  # 1. which of the contact's attributes you want to update
-  # 2. the new value for that attribute
-  # and then make the appropriate change to the contact
-  def update(att_update, att_value)
-
-    # puts "Which attribute do you want up update? (first, last, email or note)"
-    # att_update = gets.chomp!
-    # puts "What is the new value"
-    # att_value = gets.chomp!
-
-    if att_update == "first"
-      @first_name = att_value
-    elsif att_update == "last"
-      @last_name = att_value
-    elsif att_update == "email"
-      @email = att_value
-    elsif att_update == "note"
-      @note = att_value
-    end
-
-
-
-  end
-
 
   # This method should delete all of the contacts
 
@@ -64,15 +39,7 @@ class Contact < ActiveRecord::Base
 
   # This method should delete the contact
   # HINT: Check the Array class docs for built-in methods that might be useful here
-  def self.delete(delete_id)#(delete_id)
 
-    delete_var = delete_id.to_i #do i need to do this? who knows...
-    @@contacts.each do |item| #iterate over each instance of contact in the master array
-        if item.id == delete_var #cif there is an item id thats the same as user inputted delete_var
-          temp_var = @@contacts.index(item) #save the index number of the @@contact instance with the id
-          @@contacts.delete_at(temp_var) #and delete the array item at that index number
-        end
-    end
     #@@contacts.delete(self)
     # delete_var = delete_id.to_i #do i need to do this? who knows...
     # @@contacts.each do |item| #iterate over each instance of contact in the master array
@@ -90,7 +57,6 @@ class Contact < ActiveRecord::Base
       # @@contacts.delete_at(contact_delete)
 
     #end
-  end
 
   # Feel free to add other methods here, if you need them.
 
