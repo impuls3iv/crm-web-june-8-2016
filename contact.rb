@@ -14,59 +14,9 @@ class Contact < ActiveRecord::Base
 
 
 
-  # This method should initialize the contact's attributes
-  def initialize(first_name, last_name, email, note) #id isnt here because this is for writable attributes
-    @first_name = first_name
-    @last_name = last_name
-    @email = email
-    @note = note
-    @id = @@id
-    @@id += 1 # this way the next contact will get a different id
-  end
-  # This method should call the initializer,
-  # store the newly created contact, and then return it
-  def self.create(first_name, last_name, email, note)
-
-    new_contact = Contact.new(first_name, last_name, email, note)
-    @@contacts << new_contact
-
-    return new_contact
-
-  end
-
-  # This method should return all of the existing contacts
-  def self.all
-
-
-    #iterated thru @@contact and prints info in each instance
-    #return @@contacts
-     @@contacts.each do |all_names|
-       puts "First name: #{all_names.first_name}, Last name: #{all_names.last_name}, Email: #{all_names.email}, Notes: #{all_names.note}, ID: #{all_names.id} "
-     end
-    #
-  end
-
   # This method should accept an id as an argument
   # and return the contact who has that id
-  def self.find(find_argument)
 
-
-    #puts "Which ID do you want to find"
-    #find_contact_num = gets.chomp!.to_i
-    # find_contact_num = find_argument.to_i
-    # #iterates through contacts class var and gives the id attribute of each instance
-    # #still needs to find the SPECIFIC instance
-    # #for find_contact_counter in 0..@@contacts.length
-    # @@contacts.each do |contact_item|
-    #     if contact_item.id == find_contact_num
-    #       return contact_item
-    #     end
-
-    @@contacts.find { |contact| contact.id == find_argument }
-
-
-
-  end
 
   # This method should work similarly to the find method above
   # but it should allow you to search for a contact using attributes other than id
