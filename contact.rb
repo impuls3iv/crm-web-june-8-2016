@@ -12,11 +12,8 @@ ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'CRM_web.s
 
 class Contact < ActiveRecord::Base
 
-  attr_reader :id
-  attr_accessor :first_name, :last_name, :email, :note
 
-  @@contacts = []
-  @@id = 1
+
   # This method should initialize the contact's attributes
   def initialize(first_name, last_name, email, note) #id isnt here because this is for writable attributes
     @first_name = first_name
