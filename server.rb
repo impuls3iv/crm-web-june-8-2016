@@ -112,5 +112,6 @@ end
 post '/search' do
 
   @contact_holder = Contact.find_by last_name: params[:find_last_name}
+  redirect to('/search')
 
 end
