@@ -101,11 +101,10 @@ get '/contacts/:id/edit' do
   else
     raise Sinatra::NotFound
   end
+end
 
-  get '/search' do
+get '/search' do
 
     erb :search
-
-  end
 
 end
