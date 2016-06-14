@@ -30,7 +30,9 @@ body {
 
 #range_count {
 
-  
+  background-color: goldenrod;
+  font-family: monospace;
+  font-size: 20px;
 
 }
 
