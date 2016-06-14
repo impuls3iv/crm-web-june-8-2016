@@ -1,11 +1,5 @@
 <center><h1 class="headerbig">All Contacts</h1></center>
 
-<ol>
-<% Contact.all.each do |contact| %>
-  <li id="contact_printout">Name: <%= contact.first_name %> <%= contact.last_name %> Email: <%= contact.email %> ID: <%= contact.id %> Notes: <%= contact.note %></li></br>
-<% end %>
-</ol>
-
 <p id="contact_count">
   You have <%= Contact.count %> people in your list
 </p></br>
@@ -13,3 +7,11 @@
 <p id="range_count">
   The contact IDs span between <%= Contact.first.id %> and <%= Contact.last.id %>
 </p>
+
+
+
+<ol>
+<% Contact.all.each do |contact| %>
+  <li id="contact_printout">Name: <%= contact.first_name %> <%= contact.last_name %> Email: <%= contact.email %> ID: <%= contact.id %> Notes: <%= contact.note %></li></br>
+<% end %>
+</ol>
