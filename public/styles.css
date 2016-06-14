@@ -26,6 +26,7 @@ body {
   font-family: monospace;
   font-size: 20px;
   margin-bottom: 0px;
+  border: 2px solid black;
 
 }
 
@@ -35,6 +36,7 @@ body {
   font-family: monospace;
   font-size: 20px;
   margin-top: 0px;
+  border: 2px solid black;
 
 }
 
@@ -51,8 +53,8 @@ ol {
   padding: 0;
   overflow: hidden;
   background-color: #00CC5C;
-  margin-left: 30%;
-  margin-right: 22%;
+  margin-left: 25%;
+  margin-right: 20%;
 }
 
 #edit_link {

@@ -12,6 +12,6 @@
 
 <ol>
 <% Contact.all.each do |contact| %>
-  <li id="contact_printout">Name: <%= contact.first_name %> <%= contact.last_name %> Email: <%= contact.email %> ID: <%= contact.id %> Notes: <%= contact.note %></li></br>
+  <li id="contact_printout">Name: <%= contact.first_name %> <%= contact.last_name %> Email: <%= contact.email %> <b>ID: <%= contact.id %></b> Notes: <%= contact.note %></li></br>
 <% end %>
 </ol>
