@@ -25,6 +25,7 @@ body {
   background-color: #00CC5C;
   font-family: monospace;
   font-size: 20px;
+  margin-bottom: 0px;
 
 }
 
@@ -33,6 +34,7 @@ body {
   background-color: goldenrod;
   font-family: monospace;
   font-size: 20px;
+  margin-top: 0px;
 
 }
 
