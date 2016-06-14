@@ -20,6 +20,20 @@ body {
   text-align: center;
 }
 
+#contact_count {
+
+  background-color: #00CC5C;
+  font-family: monospace;
+  font-size: 20px;
+
+}
+
+#range_count {
+
+  
+
+}
+
 ol {
   color: white;
   font-family: monospace, sans-serif;
@@ -57,7 +71,7 @@ ol {
 
 #contact_printout {
   float: left;
-  
+
 }
 
 li {
